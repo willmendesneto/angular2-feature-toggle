@@ -4,8 +4,9 @@ module.exports = function (config) {
     frameworks: ['jasmine', 'angular-cli'],
     plugins: [
       require('karma-jasmine'),
+      require('karma-spec-reporter'),
+      require('karma-coverage'),
       require('karma-phantomjs-launcher'),
-      require('karma-remap-istanbul'),
       require('angular-cli/plugins/karma')
     ],
     files: [
@@ -14,17 +15,23 @@ module.exports = function (config) {
     preprocessors: {
       './src/test.ts': ['angular-cli']
     },
-    remapIstanbulReporter: {
-      reports: {
-        html: 'coverage',
-        lcovonly: './coverage/coverage.lcov'
-      }
+
+    //  coverage reporter configuration
+    coverageReporter: {
+      dir:'coverage/',
+      reporters: [
+        { type: 'html', subdir: 'report-html' },
+        { type: 'lcov', subdir: 'report-lcov' }
+      ]
     },
+
+    reportSlowerThan: 700,
+
     angularCli: {
       config: './angular-cli.json',
       environment: 'dev'
     },
-    reporters: ['progress', 'karma-remap-istanbul'],
+    reporters: ['spec', 'coverage'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,

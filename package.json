@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "tslint \"src/**/*.ts\"",
     "test": "tslint src/*.ts --exclude=src/*.d.ts && karma start",
-    "coveralls": "cat ./coverage/coverage.lcov | ./node_modules/.bin/coveralls && rm -rf ./coverage"
+    "coveralls": "cat ./coverage/report-lcov/lcov.info | ./node_modules/.bin/coveralls && rm -rf coverage"
   },
   "private": true,
   "dependencies": {
@@ -33,9 +33,10 @@
     "jasmine-spec-reporter": "2.5.0",
     "karma": "1.2.0",
     "karma-cli": "^1.0.1",
+    "karma-coverage": "^1.1.1",
     "karma-jasmine": "^1.0.2",
     "karma-phantomjs-launcher": "^1.0.2",
-    "karma-remap-istanbul": "^0.2.1",
+    "karma-spec-reporter": "0.0.26",
     "ts-node": "1.2.1",
     "tslint": "3.13.0",
     "typescript": "2.0.2"
