@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "tslint \"src/**/*.ts\"",
     "test": "tslint src/*.ts --exclude=src/*.d.ts && karma start",
-    "coveralls": "cat ./coverage/report-lcov/lcov.info | ./node_modules/.bin/coveralls && rm -rf coverage"
+    "coveralls": "cat ./coverage/report-lcov/lcov.info | ./node_modules/.bin/coveralls && rm -rf coverage",
+    "commit": "git-cz"
   },
   "private": true,
   "dependencies": {
@@ -28,7 +29,9 @@
     "@types/node": "^6.0.42",
     "angular-cli": "1.0.0-beta.17",
     "codelyzer": "~0.0.26",
+    "commitizen": "^2.8.6",
     "coveralls": "^2.11.14",
+    "cz-conventional-changelog": "^1.2.0",
     "jasmine-core": "2.4.1",
     "jasmine-spec-reporter": "2.5.0",
     "karma": "1.2.0",
@@ -40,5 +43,10 @@
     "ts-node": "1.2.1",
     "tslint": "3.13.0",
     "typescript": "2.0.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
   }
 }
