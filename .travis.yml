@@ -2,7 +2,8 @@ language: node_js
 node_js:
   - "6.7.0"
 before_script:
-  - npm i -g angular-cli
   - npm install
+  - npm i -g angular-cli
 after_script:
   - npm test
+  - npm run coveralls

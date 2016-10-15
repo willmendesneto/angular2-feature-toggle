@@ -5,7 +5,8 @@
   "angular-cli": {},
   "scripts": {
     "lint": "tslint \"src/**/*.ts\"",
-    "test": "tslint src/*.ts --exclude=src/*.d.ts && karma start"
+    "test": "tslint src/*.ts --exclude=src/*.d.ts && karma start",
+    "coveralls": "cat ./coverage/coverage.lcov | ./node_modules/.bin/coveralls && rm -rf ./coverage"
   },
   "private": true,
   "dependencies": {
@@ -27,6 +28,7 @@
     "@types/node": "^6.0.42",
     "angular-cli": "1.0.0-beta.17",
     "codelyzer": "~0.0.26",
+    "coveralls": "^2.11.14",
     "jasmine-core": "2.4.1",
     "jasmine-spec-reporter": "2.5.0",
     "karma": "1.2.0",
