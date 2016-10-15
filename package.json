@@ -4,9 +4,8 @@
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
-    "start": "ng serve",
     "lint": "tslint \"src/**/*.ts\"",
-    "test": "ng test"
+    "test": "tslint src/*.ts --exclude=src/*.d.ts && karma start"
   },
   "private": true,
   "dependencies": {
