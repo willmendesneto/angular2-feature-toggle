@@ -14,4 +14,4 @@ const FEATURE_TOGGLE_DIRECTIVES: any[] = [
   exports: FEATURE_TOGGLE_DIRECTIVES
 })
 
-export class FeatureToggleModule { }
+export class FeatureToggleNgModule { }
