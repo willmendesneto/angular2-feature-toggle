@@ -8,8 +8,8 @@ import { FeatureToggleDirective } from './feature-toggle.directive';
   selector: 'kp-container',
   template: `
   <div>
-    <div class="feature-toggle-component" *kpFeatureToggle="true">Feature toggle enabled</div>
-    <div class="feature-toggle-component" *kpFeatureToggle="false">Feature toggle disabled</div>
+    <div class="feature-toggle-component" *featureToggle="true">Feature toggle enabled</div>
+    <div class="feature-toggle-component" *featureToggle="false">Feature toggle disabled</div>
   </div>
   `
 })
@@ -17,7 +17,7 @@ class ContainerComponent {}
 
 describe('Directive: FeatureToggle', () => {
 
-  let fixture;
+  let fixture: any;
 
   beforeEach(() => {
     fixture = TestBed.configureTestingModule({

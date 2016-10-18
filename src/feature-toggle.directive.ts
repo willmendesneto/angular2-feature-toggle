@@ -7,12 +7,12 @@ import {
 } from '@angular/core';
 
 @Directive({
-  selector: '[kpFeatureToggle]'
+  selector: '[featureToggle]'
 })
 
 export class FeatureToggleDirective implements OnInit {
 
-  @Input() public kpFeatureToggle: string;
+  @Input() public featureToggle: string;
 
   private isEnabled: string;
 
@@ -22,7 +22,7 @@ export class FeatureToggleDirective implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.isEnabled = this.kpFeatureToggle;
+    this.isEnabled = this.featureToggle;
 
     if (this.isEnabled) {
       this.viewContainer.createEmbeddedView(this.templateRef);
