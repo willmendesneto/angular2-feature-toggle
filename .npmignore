@@ -1,0 +1,24 @@
+#################
+## Misc
+#################
+
+coverage
+node_modules
+src/*.{js,d.ts,metadata.json}
+*.log
+config
+*.ts
+*.spec.{ts,.d.ts,.js}
+.github
+coverage
+!*.d.ts
+!*.metadata.json
+.*
+.*.yml
+
+*.{js,md,json}
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+!package.json
