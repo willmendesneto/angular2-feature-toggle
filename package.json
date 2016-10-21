@@ -16,9 +16,6 @@
     "test:watch": "karma start --auto-watch",
     "moment2-build": "ngc",
     "prepublish": "npm run build",
-    "prepublish2": "ngc && node make.js && npm run rollup && npm run minify",
-    "rollup": "rollup -f iife -c rollup.config.js -o dist/angular2-feature-toggle.xpto.js",
-    "minify": "uglifyjs dist/angular2-feature-toggle.xpto.js --screw-ie8 --compress --mangle --output dist/angular2-feature-toggle.xpto.min.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {

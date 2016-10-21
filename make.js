@@ -27,7 +27,7 @@ var config = {
 builder.config(config);
 
 builder
-.buildStatic('index', path.resolve(__dirname, 'dist/', name + '.js'), {
+.buildStatic('dist/index', path.resolve(__dirname, 'dist/', name + '.js'), {
   minify: true,
   sourceMaps: true,
   format: 'umd'
