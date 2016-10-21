@@ -12,7 +12,7 @@
     "test": "karma start",
     "build": "rm -rf dist && ngc -p tsconfig.json",
     "coveralls": "cat ./coverage/report-lcov/lcov.info | ./node_modules/.bin/coveralls && rm -rf coverage",
-    "commit": "npm run prepublish && npm test && git-cz",
+    "commit": "git-cz",
     "test:watch": "karma start --auto-watch",
     "moment2-build": "ngc",
     "prepublish": "npm run build",
@@ -23,17 +23,16 @@
     "url": "https://github.com/willmendesneto/angular2-feature-toggle.git"
   },
   "private": false,
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "core-js": "^2.4.1",
+    "ts-helpers": "^1.1.1",
+    "systemjs": "^0.19.31",
     "@angular/forms": "~2.1.0",
     "@angular/http": "~2.1.0",
     "@angular/router": "~3.1.0",
-    "core-js": "^2.4.1",
-    "ts-helpers": "^1.1.1",
     "@angular/platform-browser-dynamic": "^2.1.0",
     "rxjs-es": "^5.0.0-beta.12",
-    "systemjs": "^0.19.31"
-  },
-  "devDependencies": {
     "@angular/common": "2.0.2",
     "@angular/compiler": "2.0.2",
     "@angular/compiler-cli": "0.6.4",
@@ -70,9 +69,6 @@
     "karma-sourcemap-loader": "^0.3.7",
     "karma-spec-reporter": "0.0.26",
     "karma-webpack": "^1.8.0",
-    "nodemon": "^1.11.0",
-    "rollup": "^0.36.3",
-    "rollup-plugin-node-resolve": "^2.0.0",
     "semantic-release": "4.3.5",
     "source-map-loader": "0.1.5",
     "systemjs-builder": "0.15.32",
