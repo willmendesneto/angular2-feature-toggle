@@ -1,5 +1,7 @@
 {
   "name": "angular2-feature-toggle",
+  "description": "Your module to handle with feature toggles in Angular2 applications easier.",
+  "author": "Will Mendes <willmendesneto@gmail.com>",
   "version": "1.0.2",
   "license": "MIT",
   "main": "dist/index.js",

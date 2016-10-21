@@ -57,3 +57,10 @@ $ npm run commit
 # Live example
 
 [https://plnkr.co/edit/RepjOclLXM32YbCgC4vv](https://plnkr.co/edit/RepjOclLXM32YbCgC4vv)
+
+## Author
+
+**Wilson Mendes (willmendesneto)**
++ <https://plus.google.com/+WilsonMendes>
++ <https://twitter.com/willmendesneto>
++ <http://github.com/willmendesneto>
