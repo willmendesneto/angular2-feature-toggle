@@ -2,7 +2,7 @@
   "name": "angular2-feature-toggle",
   "description": "Your module to handle with feature toggles in Angular2 applications easier.",
   "author": "Will Mendes <willmendesneto@gmail.com>",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "main": "dist/index.js",
   "homepage": "https://github.com/willmendesneto/angular2-feature-toggle",
