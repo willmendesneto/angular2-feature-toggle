@@ -7,6 +7,17 @@
 
 Your module to handle with [feature toggles](http://martinfowler.com/bliki/FeatureToggle.html) in Angular2 applications easier.
 
+## Why Feature toggle?
+
+> This is a common concept, but why use this directive instead solve it via server-side rendering?
+
+The idea of this directive is make this process transparent and easier. So the main point is integrate this directive with other tooling process, such as:
+- Server-side rendering;
+- Progressive rendering;
+- Any other that yoy like :)
+
+You can integrate with WebSockets or handling this in a EventSourcing architecture. It's totally transparent for you and you can integrate easier in your application
+
 ## Instalation and usage
 
 Install `angular2-feature-toggle` module as a project dependency.
