@@ -16,7 +16,6 @@
     "coveralls": "cat ./coverage/report-lcov/lcov.info | ./node_modules/.bin/coveralls && rm -rf coverage",
     "commit": "git-cz",
     "test:watch": "karma start --auto-watch",
-    "moment2-build": "ngc",
     "prepublish": "npm run build",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
