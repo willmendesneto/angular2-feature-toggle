@@ -4,6 +4,12 @@
 
 [![Coverage Status](https://coveralls.io/repos/willmendesneto/angular2-feature-toggle/badge.svg?branch=master)](https://coveralls.io/r/willmendesneto/angular2-feature-toggle?branch=master)
 
+## DEPRECATED
+
+This project has been deprecated. Please use [ngx-feature-toggle](https://github.com/willmendesneto/ngx-feature-toggle) instead. More details in the [Github repository](https://github.com/willmendesneto/ngx-feature-toggle) or in the [NPM page for ngx-feature-toggle](https://www.npmjs.com/package/ngx-feature-toggle).
+
+
+
 
 Your module to handle with [feature toggles](http://martinfowler.com/bliki/FeatureToggle.html) in Angular2 applications easier.
 
